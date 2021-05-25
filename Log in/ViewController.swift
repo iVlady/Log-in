@@ -30,9 +30,6 @@ class ViewController: UIViewController {
         userNameText.text = nil
         password.text = nil
     }
-    
-    
-    
-    
+
 }
 

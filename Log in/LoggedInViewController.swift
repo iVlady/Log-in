@@ -9,10 +9,14 @@ import UIKit
 
 class LoggedInViewController: UIViewController {
 
+    @IBOutlet weak var nameData: UITextField!
+    @IBOutlet weak var logOutButton: UIButton!
+    
+    var textArea = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        nameData.text = textArea
     }
     
 

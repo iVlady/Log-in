@@ -102,6 +102,10 @@
                         <color key="backgroundColor" systemColor="secondaryLabelColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="cGJ-P2-WCx"/>
+                    <connections>
+                        <outlet property="logOutButton" destination="ce6-JB-Gb0" id="yAF-am-Xv3"/>
+                        <outlet property="nameData" destination="2ZI-Ii-kPG" id="aDM-Cv-uvp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SIf-9V-WHd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

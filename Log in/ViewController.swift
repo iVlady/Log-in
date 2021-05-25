@@ -18,6 +18,8 @@ class ViewController: UIViewController {
         logInButton.layer.cornerRadius = 15
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    }
 
 }
 

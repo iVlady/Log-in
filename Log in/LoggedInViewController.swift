@@ -12,11 +12,13 @@ class LoggedInViewController: UIViewController {
     @IBOutlet weak var nameData: UITextField!
     @IBOutlet weak var logOutButton: UIButton!
     
-    var textArea = ""
+    var textArea: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         nameData.text = textArea
+        logOutButton.layer.cornerRadius = 15
     }
     
 

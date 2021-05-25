@@ -67,6 +67,7 @@
                     <navigationItem key="navigationItem" id="r5R-BT-w8L"/>
                     <connections>
                         <outlet property="logInButton" destination="OT8-zt-ST5" id="a4d-uh-sQQ"/>
+                        <outlet property="userNameText" destination="Ldz-7N-5ZV" id="Q74-1u-pXM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

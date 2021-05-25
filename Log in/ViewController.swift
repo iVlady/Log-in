@@ -10,6 +10,7 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var logInButton: UIButton!
+    @IBOutlet weak var userNameText: UITextField!
     
     
     override func viewDidLoad() {
@@ -19,6 +20,10 @@ class ViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let loggedInVC = segue.destination as? LoggedInViewController else {
+            return
+        }
+        loggedInVC.textArea = userNameText.text
     }
 
 }

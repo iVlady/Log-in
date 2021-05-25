@@ -24,6 +24,9 @@
                                 <state key="normal" title="Log in">
                                     <color key="titleColor" systemColor="systemPinkColor"/>
                                 </state>
+                                <connections>
+                                    <segue destination="chS-NV-IBy" kind="show" id="P7C-bn-opy"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="Fcx-4f-Y95">
                                 <rect key="frame" x="28" y="13" width="358" height="264"/>
@@ -95,6 +98,7 @@
                         <viewLayoutGuide key="safeArea" id="cbg-ZC-JA4"/>
                         <color key="backgroundColor" systemColor="secondaryLabelColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="cGJ-P2-WCx"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SIf-9V-WHd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

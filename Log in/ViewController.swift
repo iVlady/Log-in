@@ -11,6 +11,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var logInButton: UIButton!
     @IBOutlet weak var userNameText: UITextField!
+    @IBOutlet weak var password: UITextField!
     
     
     override func viewDidLoad() {
@@ -20,11 +21,18 @@ class ViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let loggedInVC = segue.destination as? LoggedInViewController else {
-            return
-        }
+        guard let loggedInVC = segue.destination as? LoggedInViewController else { return }
         loggedInVC.textArea = userNameText.text
     }
-
+    
+    
+    @IBAction func unwind(for segue: UIStoryboardSegue) {
+        userNameText.text = nil
+        password.text = nil
+    }
+    
+    
+    
+    
 }
 

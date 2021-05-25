@@ -67,6 +67,7 @@
                     <navigationItem key="navigationItem" id="r5R-BT-w8L"/>
                     <connections>
                         <outlet property="logInButton" destination="OT8-zt-ST5" id="a4d-uh-sQQ"/>
+                        <outlet property="password" destination="F6I-dd-dV5" id="pGW-gm-N25"/>
                         <outlet property="userNameText" destination="Ldz-7N-5ZV" id="Q74-1u-pXM"/>
                     </connections>
                 </viewController>
@@ -90,6 +91,10 @@
                                 <state key="normal" title="Log out">
                                     <color key="titleColor" systemColor="systemPinkColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="logOutButton:" destination="chS-NV-IBy" eventType="touchUpInside" id="t5v-fs-a2G"/>
+                                    <segue destination="g6P-xW-mox" kind="unwind" unwindAction="unwindFor:" id="8zL-rq-NgR"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2ZI-Ii-kPG">
                                 <rect key="frame" x="75" y="308" width="265" height="34"/>
@@ -109,6 +114,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SIf-9V-WHd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="g6P-xW-mox" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1721.7391304347827" y="75.669642857142847"/>
         </scene>

@@ -18,7 +18,7 @@ class LoggedInViewController: UIViewController {
         super.viewDidLoad()
         
         nameData.text = textArea
-        logOutButton.layer.cornerRadius = 15
+        logOutButton.layer.cornerRadius = 10
         
         nameData.isUserInteractionEnabled = false
     }

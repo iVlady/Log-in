@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        logInButton.layer.cornerRadius = 15
+        logInButton.layer.cornerRadius = 10
         userNameText.autocorrectionType = .no
         password.autocorrectionType = .no
         

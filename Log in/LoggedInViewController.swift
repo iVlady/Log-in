@@ -19,6 +19,8 @@ class LoggedInViewController: UIViewController {
         
         nameData.text = textArea
         logOutButton.layer.cornerRadius = 15
+        
+        nameData.isUserInteractionEnabled = false
     }
     
     @IBAction func logOutButton(_ sender: UIButton) {

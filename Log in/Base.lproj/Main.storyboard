@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fyb-E2-Lab">
-    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,11 +13,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Log_in" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OT8-zt-ST5">
-                                <rect key="frame" x="144" y="419" width="102" height="34"/>
+                                <rect key="frame" x="153" y="419" width="108" height="36"/>
                                 <color key="backgroundColor" systemColor="tertiaryLabelColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="OT8-zt-ST5" secondAttribute="height" multiplier="300:100" id="3Z9-nU-lXy"/>
@@ -31,16 +31,16 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="BaI-wz-hBg">
-                                <rect key="frame" x="65" y="285" width="260" height="92"/>
+                                <rect key="frame" x="65" y="285" width="284" height="92"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ldz-7N-5ZV">
-                                        <rect key="frame" x="0.0" y="0.0" width="260" height="34"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="284" height="34"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F6I-dd-dV5">
-                                        <rect key="frame" x="0.0" y="58" width="260" height="34"/>
+                                        <rect key="frame" x="0.0" y="58" width="284" height="34"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -51,13 +51,13 @@
                                 </constraints>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="Fcx-4f-Y95">
-                                <rect key="frame" x="66" y="44" width="258" height="193"/>
+                                <rect key="frame" x="66" y="44" width="282" height="193"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="193" id="rHC-Xc-5m7"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="lCb-ip-8ij">
-                                <rect key="frame" x="48" y="484" width="294" height="30"/>
+                                <rect key="frame" x="60" y="486" width="294" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vxg-yQ-3mn">
                                         <rect key="frame" x="0.0" y="0.0" width="133" height="30"/>
@@ -119,17 +119,21 @@
             <objects>
                 <viewController storyboardIdentifier="LoggedInViewController" id="chS-NV-IBy" customClass="LoggedInViewController" customModule="Log_in" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="POo-LQ-R9C">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2ZI-Ii-kPG">
-                                <rect key="frame" x="75" y="308" width="240" height="44"/>
+                                <rect key="frame" x="65" y="308" width="284" height="34"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="284" id="dcq-iC-THp"/>
+                                    <constraint firstAttribute="height" constant="34" id="tgE-wE-aOF"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ce6-JB-Gb0">
-                                <rect key="frame" x="141" y="404" width="108" height="36"/>
+                                <rect key="frame" x="153" y="394" width="108" height="36"/>
                                 <color key="backgroundColor" systemColor="tertiaryLabelColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ce6-JB-Gb0" secondAttribute="height" multiplier="300:100" id="R1q-wg-ejo"/>
@@ -148,11 +152,9 @@
                         <color key="backgroundColor" systemColor="secondaryLabelColor"/>
                         <constraints>
                             <constraint firstItem="ce6-JB-Gb0" firstAttribute="bottom" secondItem="2ZI-Ii-kPG" secondAttribute="bottom" constant="88" id="0CL-qs-qzA"/>
-                            <constraint firstItem="2ZI-Ii-kPG" firstAttribute="leading" secondItem="cbg-ZC-JA4" secondAttribute="leading" constant="75" id="7IG-OU-Pex"/>
-                            <constraint firstItem="ce6-JB-Gb0" firstAttribute="centerX" secondItem="2ZI-Ii-kPG" secondAttribute="centerX" id="Aqy-zZ-NSo"/>
-                            <constraint firstItem="ce6-JB-Gb0" firstAttribute="centerY" secondItem="POo-LQ-R9C" secondAttribute="centerY" id="ZvW-yG-VXq"/>
+                            <constraint firstItem="2ZI-Ii-kPG" firstAttribute="centerX" secondItem="POo-LQ-R9C" secondAttribute="centerX" id="F71-wD-Dt3"/>
+                            <constraint firstItem="ce6-JB-Gb0" firstAttribute="centerX" secondItem="POo-LQ-R9C" secondAttribute="centerX" id="IMT-nT-geC"/>
                             <constraint firstItem="2ZI-Ii-kPG" firstAttribute="top" secondItem="cbg-ZC-JA4" secondAttribute="top" constant="264" id="oUX-iJ-L2F"/>
-                            <constraint firstItem="ce6-JB-Gb0" firstAttribute="centerX" secondItem="POo-LQ-R9C" secondAttribute="centerX" id="phI-Fb-Z6t"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="cGJ-P2-WCx"/>

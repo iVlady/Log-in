@@ -18,6 +18,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         logInButton.layer.cornerRadius = 15
+        userNameText.autocorrectionType = .no
+        password.autocorrectionType = .no
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

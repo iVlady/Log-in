@@ -20,7 +20,9 @@ class ViewController: UIViewController {
         logInButton.layer.cornerRadius = 15
         userNameText.autocorrectionType = .no
         password.autocorrectionType = .no
+        
     }
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let loggedInVC = segue.destination as? LoggedInViewController else { return }
@@ -33,5 +35,9 @@ class ViewController: UIViewController {
         password.text = nil
     }
 
+    @IBAction func tapToClose(_ sender: UITapGestureRecognizer) {
+        userNameText.resignFirstResponder()
+        password.resignFirstResponder()
+    }
 }
 

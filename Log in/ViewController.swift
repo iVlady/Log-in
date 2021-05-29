@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var userNameText: UITextField!
     @IBOutlet weak var password: UITextField!
     
+    private var userName = "User"
+    private var passwodIs = "1111"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,10 +26,29 @@ class ViewController: UIViewController {
     }
     
     
+    @IBAction func pressForgotUserName(_ sender: UIButton) {
+        showAlert(title: "Did you?", message: "The user name is User")
+    }
+    
+    @IBAction func pressForgotPassword(_ sender: UIButton) {
+        showAlert(title: "Did you?", message: "The password is 1111")
+    }
+    
+    @IBAction func logInButtonPressed(_ sender: UIButton) {
+        if userNameText.text != userName || password.text != passwodIs {
+            showAlert(title: "Ooooopppsss", message: "The user name or password isn't valid")
+        }
+        else {
+            performSegue(withIdentifier: "loggedInVC", sender: nil)
+        }
+    }
+    
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let loggedInVC = segue.destination as? LoggedInViewController else { return }
         loggedInVC.textArea = userNameText.text
     }
+    
     
     
     @IBAction func unwind(for segue: UIStoryboardSegue) {
@@ -41,3 +62,13 @@ class ViewController: UIViewController {
     }
 }
 
+extension ViewController {
+    private func showAlert(title: String, message: String, textField: UITextField? = nil) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default) { _ in
+            textField?.text = ""
+        }
+        alert.addAction(okAction)
+        present(alert, animated: true)
+    }
+}

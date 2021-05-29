@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fyb-E2-Lab">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -27,7 +27,8 @@
                                     <color key="titleColor" systemColor="systemPinkColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="chS-NV-IBy" kind="show" id="7QI-2C-FJZ"/>
+                                    <action selector="logInButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cgc-u3-SGy"/>
+                                    <segue destination="chS-NV-IBy" kind="show" identifier="loggedInVC" id="7QI-2C-FJZ"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="BaI-wz-hBg">
@@ -64,12 +65,18 @@
                                         <state key="normal" title="Forgot User Name?">
                                             <color key="titleColor" systemColor="systemPinkColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="pressForgotUserName:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ikO-6I-KMx"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xkZ-mS-e5i">
                                         <rect key="frame" x="171" y="0.0" width="123" height="30"/>
                                         <state key="normal" title="Forgot Password?">
                                             <color key="titleColor" systemColor="systemPinkColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="pressForgotPassword:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ybt-D0-r4j"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -117,7 +124,7 @@
         <!--Logged In View Controller-->
         <scene sceneID="bcH-jE-lWy">
             <objects>
-                <viewController storyboardIdentifier="LoggedInViewController" id="chS-NV-IBy" customClass="LoggedInViewController" customModule="Log_in" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoggedInViewController" modalPresentationStyle="fullScreen" id="chS-NV-IBy" customClass="LoggedInViewController" customModule="Log_in" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="POo-LQ-R9C">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -167,26 +174,6 @@
                 <exit id="g6P-xW-mox" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1721.7391304347827" y="75.669642857142847"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="3By-EL-zOo">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="fyb-E2-Lab" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2JU-Kf-2bx">
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Sed-rL-ETN">
-                        <autoresizingMask key="autoresizingMask"/>
-                    </toolbar>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="uCt-Zb-mca"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OFN-BP-7lm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="18.840579710144929" y="76.339285714285708"/>
         </scene>
     </scenes>
     <resources>

@@ -39,7 +39,7 @@ class ViewController: UIViewController {
             showAlert(title: "Ooooopppsss", message: "The user name or password isn't valid")
         }
         else {
-            performSegue(withIdentifier: "loggedInVC", sender: nil)
+            performSegue(withIdentifier: "tabBarController", sender: nil)
         }
     }
     

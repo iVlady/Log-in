@@ -28,7 +28,7 @@
                                 </state>
                                 <connections>
                                     <action selector="logInButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cgc-u3-SGy"/>
-                                    <segue destination="YPz-aS-pVy" kind="show" identifier="loggedInVC" id="7QI-2C-FJZ"/>
+                                    <segue destination="YPz-aS-pVy" kind="show" identifier="tabBarController" id="7QI-2C-FJZ"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="BaI-wz-hBg">
@@ -121,10 +121,10 @@
             </objects>
             <point key="canvasLocation" x="928.98550724637687" y="76.339285714285708"/>
         </scene>
-        <!--LoggedInViewController-->
+        <!--Profile-->
         <scene sceneID="bcH-jE-lWy">
             <objects>
-                <viewController storyboardIdentifier="LoggedInViewController" title="LoggedInViewController" modalPresentationStyle="fullScreen" id="chS-NV-IBy" customClass="LoggedInViewController" customModule="Log_in" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoggedInViewController" title="Profile" modalPresentationStyle="fullScreen" id="chS-NV-IBy" customClass="LoggedInViewController" customModule="Log_in" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="POo-LQ-R9C">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -164,7 +164,7 @@
                             <constraint firstItem="2ZI-Ii-kPG" firstAttribute="top" secondItem="cbg-ZC-JA4" secondAttribute="top" constant="264" id="oUX-iJ-L2F"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" selectedImage="location" catalog="system" id="eVa-pN-Bdf"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="person" catalog="system" selectedImage="person" id="eVa-pN-Bdf"/>
                     <navigationItem key="navigationItem" id="cGJ-P2-WCx"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -219,7 +219,7 @@
                         <viewLayoutGuide key="safeArea" id="uAu-ep-Z2o"/>
                         <color key="backgroundColor" systemColor="systemPinkColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Hobbies" image="pianokeys" catalog="system" id="dpA-3e-kXV"/>
+                    <tabBarItem key="tabBarItem" title="Hobbies" image="gamecontroller" catalog="system" id="dpA-3e-kXV"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rlQ-aU-epj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -251,10 +251,10 @@
     </scenes>
     <resources>
         <image name="Image" width="512" height="512"/>
-        <image name="location" catalog="system" width="128" height="121"/>
+        <image name="gamecontroller" catalog="system" width="128" height="80"/>
+        <image name="person" catalog="system" width="128" height="117"/>
         <image name="phone" catalog="system" width="128" height="115"/>
         <image name="photo" catalog="system" width="128" height="93"/>
-        <image name="pianokeys" catalog="system" width="128" height="93"/>
         <systemColor name="quaternaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.17999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

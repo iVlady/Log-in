@@ -14,6 +14,10 @@
 		B64DEAFD265D7D6D00BA0E57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B64DEAFC265D7D6D00BA0E57 /* Assets.xcassets */; };
 		B64DEB00265D7D6D00BA0E57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B64DEAFE265D7D6D00BA0E57 /* LaunchScreen.storyboard */; };
 		B64DEB0A265D852400BA0E57 /* LoggedInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64DEB09265D852400BA0E57 /* LoggedInViewController.swift */; };
+		B6FA1C482663DB590086D237 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FA1C472663DB590086D237 /* ContactsViewController.swift */; };
+		B6FA1C4C2663DBC10086D237 /* InterestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FA1C4B2663DBC10086D237 /* InterestsViewController.swift */; };
+		B6FA1C4E2663DEFB0086D237 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FA1C4D2663DEFB0086D237 /* UserData.swift */; };
+		B6FA1C502663E43F0086D237 /* AboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FA1C4F2663E43F0086D237 /* AboutMeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		B64DEAFF265D7D6D00BA0E57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B64DEB01265D7D6D00BA0E57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B64DEB09265D852400BA0E57 /* LoggedInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedInViewController.swift; sourceTree = "<group>"; };
+		B6FA1C472663DB590086D237 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
+		B6FA1C4B2663DBC10086D237 /* InterestsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestsViewController.swift; sourceTree = "<group>"; };
+		B6FA1C4D2663DEFB0086D237 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		B6FA1C4F2663E43F0086D237 /* AboutMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +68,8 @@
 			children = (
 				B6FA1C422662FD3F0086D237 /* View Controllers */,
 				B6FA1C432662FDE90086D237 /* Storyboards */,
-				B6FA1C442662FE2C0086D237 /* Supporting Files */,
 				B6FA1C412662FD1C0086D237 /* Models */,
+				B6FA1C442662FE2C0086D237 /* Supporting Files */,
 				B64DEAF3265D7D6C00BA0E57 /* AppDelegate.swift */,
 				B64DEAF5265D7D6C00BA0E57 /* SceneDelegate.swift */,
 				B64DEB01265D7D6D00BA0E57 /* Info.plist */,
@@ -72,6 +80,7 @@
 		B6FA1C412662FD1C0086D237 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B6FA1C4D2663DEFB0086D237 /* UserData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -81,6 +90,9 @@
 			children = (
 				B64DEAF7265D7D6C00BA0E57 /* ViewController.swift */,
 				B64DEB09265D852400BA0E57 /* LoggedInViewController.swift */,
+				B6FA1C472663DB590086D237 /* ContactsViewController.swift */,
+				B6FA1C4F2663E43F0086D237 /* AboutMeViewController.swift */,
+				B6FA1C4B2663DBC10086D237 /* InterestsViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -172,10 +184,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6FA1C4C2663DBC10086D237 /* InterestsViewController.swift in Sources */,
 				B64DEAF8265D7D6C00BA0E57 /* ViewController.swift in Sources */,
+				B6FA1C502663E43F0086D237 /* AboutMeViewController.swift in Sources */,
+				B6FA1C4E2663DEFB0086D237 /* UserData.swift in Sources */,
 				B64DEAF4265D7D6C00BA0E57 /* AppDelegate.swift in Sources */,
 				B64DEAF6265D7D6C00BA0E57 /* SceneDelegate.swift in Sources */,
 				B64DEB0A265D852400BA0E57 /* LoggedInViewController.swift in Sources */,
+				B6FA1C482663DB590086D237 /* ContactsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -44,20 +44,20 @@ class ViewController: UIViewController {
     }
     
     
-    /*    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let loggedInVC = segue.destination as? LoggedInViewController else { return }
-        loggedInVC.textArea = userNameText.text
-    }
-    
-  */
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let tabBarController = segue.destination as? UITabBarController, let controllers = tabBarController.viewControllers else { return }
-        for viewcontroller in controllers {
-            if let loggedInVC = viewcontroller as? LoggedInViewController {
-                loggedInVC.textArea = userNameText.text
+        for viewController in controllers {
+            if let loggedInVC = viewController as? LoggedInViewController {
+                loggedInVC.textArea = userData.name
+            } else if let interestsVC = viewController as? InterestsViewController {
+                interestsVC.hobbies = userData.interests
+            } else if let aboutMeVC = viewController as? AboutMeViewController {
+                aboutMeVC.aboutMe = userData.aboutMe
+            } else if let contactsVC = viewController as? ContactsViewController {
+                contactsVC.contacts = userData.contacts
             }
         }
+  
     }
     
     @IBAction func unwind(for segue: UIStoryboardSegue) {

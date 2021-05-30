@@ -180,51 +180,100 @@
         <!--Contacts-->
         <scene sceneID="gbo-Ai-I1L">
             <objects>
-                <viewController id="M2c-7f-cmd" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ContactsViewController" id="M2c-7f-cmd" customClass="ContactsViewController" customModule="Log_in" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gdj-jS-WNU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5aT-H7-UmY" userLabel="contactsLabel">
+                                <rect key="frame" x="75" y="179" width="265" height="144"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="V9R-9z-x72"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="secondaryLabelColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Contacts" image="phone" catalog="system" id="s9e-0q-JLt"/>
+                    <connections>
+                        <outlet property="contactsLabel" destination="5aT-H7-UmY" id="HV4-R2-eMX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vxG-Rw-zyC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3512" y="76"/>
+            <point key="canvasLocation" x="3511.594202898551" y="75.669642857142847"/>
         </scene>
-        <!--Photos-->
+        <!--About Me-->
         <scene sceneID="P8r-ZE-k7D">
             <objects>
-                <viewController id="ZZo-Fd-xle" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AboutMeViewController" id="ZZo-Fd-xle" customClass="AboutMeViewController" customModule="Log_in" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NLr-Q9-ILx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sLM-eF-kp4" userLabel="aboutMeLabel">
+                                <rect key="frame" x="101" y="151" width="213" height="154"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="O3i-ns-9VT"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="secondaryLabelColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Photos" image="photo" catalog="system" id="YZ9-yd-ypp"/>
+                    <tabBarItem key="tabBarItem" title="About Me" image="info.circle" catalog="system" id="YZ9-yd-ypp"/>
+                    <connections>
+                        <outlet property="aboutMeLabel" destination="sLM-eF-kp4" id="Mgg-di-8C9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wCC-Tr-8MH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2986" y="810"/>
+            <point key="canvasLocation" x="2985.507246376812" y="809.59821428571422"/>
         </scene>
         <!--Interests-->
         <scene sceneID="eGs-ux-zee">
             <objects>
-                <viewController title="Interests" id="bhM-uc-PhY" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="InterestsViewController" title="Interests" id="bhM-uc-PhY" customClass="InterestsViewController" customModule="Log_in" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2uj-RA-Asf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time for fun" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p5n-Fu-qxm">
+                                <rect key="frame" x="20" y="77.5" width="374" height="41"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <color key="textColor" systemColor="systemPinkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2xc-Zs-b7S" userLabel="hobbiesLabel">
+                                <rect key="frame" x="63" y="178" width="289" height="131"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="uAu-ep-Z2o"/>
-                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                        <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="p5n-Fu-qxm" secondAttribute="centerY" constant="350" id="CGI-w4-tOj"/>
+                            <constraint firstItem="uAu-ep-Z2o" firstAttribute="trailing" secondItem="p5n-Fu-qxm" secondAttribute="trailing" constant="20" id="kfB-0J-lgC"/>
+                            <constraint firstItem="p5n-Fu-qxm" firstAttribute="leading" secondItem="uAu-ep-Z2o" secondAttribute="leading" constant="20" id="lKw-up-UBh"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Hobbies" image="gamecontroller" catalog="system" id="dpA-3e-kXV"/>
+                    <tabBarItem key="tabBarItem" title="Interests" image="gamecontroller" catalog="system" id="dpA-3e-kXV"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="hobbiesLabel" destination="2xc-Zs-b7S" id="PD1-fa-1Gc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rlQ-aU-epj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2828" y="-662"/>
+            <point key="canvasLocation" x="2826.0869565217395" y="-662.27678571428567"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="dK6-Ay-fCa">
@@ -252,17 +301,14 @@
     <resources>
         <image name="Image" width="512" height="512"/>
         <image name="gamecontroller" catalog="system" width="128" height="80"/>
+        <image name="info.circle" catalog="system" width="128" height="121"/>
         <image name="person" catalog="system" width="128" height="117"/>
         <image name="phone" catalog="system" width="128" height="115"/>
-        <image name="photo" catalog="system" width="128" height="93"/>
         <systemColor name="quaternaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.17999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

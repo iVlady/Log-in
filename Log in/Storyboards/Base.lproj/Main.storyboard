@@ -28,7 +28,7 @@
                                 </state>
                                 <connections>
                                     <action selector="logInButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cgc-u3-SGy"/>
-                                    <segue destination="chS-NV-IBy" kind="show" identifier="loggedInVC" id="7QI-2C-FJZ"/>
+                                    <segue destination="YPz-aS-pVy" kind="show" identifier="loggedInVC" id="7QI-2C-FJZ"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="BaI-wz-hBg">
@@ -38,13 +38,13 @@
                                         <rect key="frame" x="0.0" y="0.0" width="284" height="34"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F6I-dd-dV5">
                                         <rect key="frame" x="0.0" y="58" width="284" height="34"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
                                     </textField>
                                 </subviews>
                                 <constraints>
@@ -121,10 +121,10 @@
             </objects>
             <point key="canvasLocation" x="928.98550724637687" y="76.339285714285708"/>
         </scene>
-        <!--Logged In View Controller-->
+        <!--LoggedInViewController-->
         <scene sceneID="bcH-jE-lWy">
             <objects>
-                <viewController storyboardIdentifier="LoggedInViewController" modalPresentationStyle="fullScreen" id="chS-NV-IBy" customClass="LoggedInViewController" customModule="Log_in" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoggedInViewController" title="LoggedInViewController" modalPresentationStyle="fullScreen" id="chS-NV-IBy" customClass="LoggedInViewController" customModule="Log_in" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="POo-LQ-R9C">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -164,7 +164,9 @@
                             <constraint firstItem="2ZI-Ii-kPG" firstAttribute="top" secondItem="cbg-ZC-JA4" secondAttribute="top" constant="264" id="oUX-iJ-L2F"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="eVa-pN-Bdf"/>
                     <navigationItem key="navigationItem" id="cGJ-P2-WCx"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="logOutButton" destination="ce6-JB-Gb0" id="yAF-am-Xv3"/>
                         <outlet property="nameData" destination="2ZI-Ii-kPG" id="aDM-Cv-uvp"/>
@@ -172,6 +174,24 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SIf-9V-WHd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="g6P-xW-mox" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2631.8840579710145" y="75.669642857142847"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="dK6-Ay-fCa">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="YPz-aS-pVy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="th6-qP-5bV"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RQw-vW-ytb">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="chS-NV-IBy" kind="relationship" relationship="viewControllers" id="ys5-YU-oSv"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f1G-Qh-xgW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1721.7391304347827" y="75.669642857142847"/>
         </scene>

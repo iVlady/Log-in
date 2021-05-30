@@ -79,8 +79,8 @@
 		B6FA1C422662FD3F0086D237 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				B64DEB09265D852400BA0E57 /* LoggedInViewController.swift */,
 				B64DEAF7265D7D6C00BA0E57 /* ViewController.swift */,
+				B64DEB09265D852400BA0E57 /* LoggedInViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";

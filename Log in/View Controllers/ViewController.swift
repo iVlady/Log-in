@@ -44,12 +44,21 @@ class ViewController: UIViewController {
     }
     
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    /*    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let loggedInVC = segue.destination as? LoggedInViewController else { return }
         loggedInVC.textArea = userNameText.text
     }
     
+  */
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let tabBarController = segue.destination as? UITabBarController, let controllers = tabBarController.viewControllers else { return }
+        for viewcontroller in controllers {
+            if let loggedInVC = viewcontroller as? LoggedInViewController {
+                loggedInVC.textArea = userNameText.text
+            }
+        }
+    }
     
     @IBAction func unwind(for segue: UIStoryboardSegue) {
         userNameText.text = nil

@@ -185,9 +185,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5aT-H7-UmY" userLabel="contactsLabel">
-                                <rect key="frame" x="75" y="179" width="265" height="144"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5aT-H7-UmY" userLabel="contactsLabel">
+                                <rect key="frame" x="30" y="249" width="354" height="144"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="144" id="4fN-by-CqJ"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -195,6 +197,11 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="V9R-9z-x72"/>
                         <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                        <constraints>
+                            <constraint firstItem="V9R-9z-x72" firstAttribute="trailing" secondItem="5aT-H7-UmY" secondAttribute="trailing" constant="30" id="VYf-Ku-xoW"/>
+                            <constraint firstItem="5aT-H7-UmY" firstAttribute="leading" secondItem="V9R-9z-x72" secondAttribute="leading" constant="30" id="kBo-aS-CDA"/>
+                            <constraint firstAttribute="centerY" secondItem="5aT-H7-UmY" secondAttribute="centerY" constant="100" id="yXc-pc-zxV"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Contacts" image="phone" catalog="system" id="s9e-0q-JLt"/>
                     <connections>
@@ -213,9 +220,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sLM-eF-kp4" userLabel="aboutMeLabel">
-                                <rect key="frame" x="101" y="151" width="213" height="154"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sLM-eF-kp4" userLabel="aboutMeLabel">
+                                <rect key="frame" x="30" y="271" width="354" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -223,6 +229,11 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="O3i-ns-9VT"/>
                         <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                        <constraints>
+                            <constraint firstItem="sLM-eF-kp4" firstAttribute="centerY" secondItem="NLr-Q9-ILx" secondAttribute="centerY" constant="-140" id="Afl-1R-nHX"/>
+                            <constraint firstItem="sLM-eF-kp4" firstAttribute="leading" secondItem="O3i-ns-9VT" secondAttribute="leading" constant="30" id="Uea-q4-aVR"/>
+                            <constraint firstItem="O3i-ns-9VT" firstAttribute="trailing" secondItem="sLM-eF-kp4" secondAttribute="trailing" constant="30" id="yQ9-ua-7XW"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="About Me" image="info.circle" catalog="system" id="YZ9-yd-ypp"/>
                     <connections>
@@ -242,16 +253,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time for fun" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p5n-Fu-qxm">
-                                <rect key="frame" x="20" y="77.5" width="374" height="41"/>
+                                <rect key="frame" x="20" y="79" width="374" height="38"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                 <color key="textColor" systemColor="systemPinkColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2xc-Zs-b7S" userLabel="hobbiesLabel">
-                                <rect key="frame" x="63" y="178" width="289" height="131"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2xc-Zs-b7S" userLabel="hobbiesLabel">
+                                <rect key="frame" x="35" y="178" width="344" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -261,8 +271,14 @@
                         <color key="backgroundColor" systemColor="secondaryLabelColor"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="p5n-Fu-qxm" secondAttribute="centerY" constant="350" id="CGI-w4-tOj"/>
+                            <constraint firstItem="p5n-Fu-qxm" firstAttribute="leading" secondItem="uAu-ep-Z2o" secondAttribute="leading" constant="20" id="bTW-br-QeY"/>
+                            <constraint firstItem="uAu-ep-Z2o" firstAttribute="trailing" secondItem="p5n-Fu-qxm" secondAttribute="trailing" constant="20" id="cCQ-ej-EMp"/>
                             <constraint firstItem="uAu-ep-Z2o" firstAttribute="trailing" secondItem="p5n-Fu-qxm" secondAttribute="trailing" constant="20" id="kfB-0J-lgC"/>
                             <constraint firstItem="p5n-Fu-qxm" firstAttribute="leading" secondItem="uAu-ep-Z2o" secondAttribute="leading" constant="20" id="lKw-up-UBh"/>
+                            <constraint firstItem="2xc-Zs-b7S" firstAttribute="leading" secondItem="uAu-ep-Z2o" secondAttribute="leading" constant="35" id="lZD-Kh-jCz"/>
+                            <constraint firstItem="uAu-ep-Z2o" firstAttribute="trailing" secondItem="2xc-Zs-b7S" secondAttribute="trailing" constant="35" id="pen-u3-v6Q"/>
+                            <constraint firstItem="2xc-Zs-b7S" firstAttribute="top" secondItem="p5n-Fu-qxm" secondAttribute="bottom" constant="61" id="rej-eq-rTX"/>
+                            <constraint firstItem="p5n-Fu-qxm" firstAttribute="top" secondItem="uAu-ep-Z2o" secondAttribute="top" constant="35" id="xPx-dZ-zeQ"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Interests" image="gamecontroller" catalog="system" id="dpA-3e-kXV"/>

@@ -164,7 +164,7 @@
                             <constraint firstItem="2ZI-Ii-kPG" firstAttribute="top" secondItem="cbg-ZC-JA4" secondAttribute="top" constant="264" id="oUX-iJ-L2F"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="eVa-pN-Bdf"/>
+                    <tabBarItem key="tabBarItem" title="Profile" selectedImage="location" catalog="system" id="eVa-pN-Bdf"/>
                     <navigationItem key="navigationItem" id="cGJ-P2-WCx"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -177,6 +177,55 @@
             </objects>
             <point key="canvasLocation" x="2631.8840579710145" y="75.669642857142847"/>
         </scene>
+        <!--Contacts-->
+        <scene sceneID="gbo-Ai-I1L">
+            <objects>
+                <viewController id="M2c-7f-cmd" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gdj-jS-WNU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="V9R-9z-x72"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Contacts" image="phone" catalog="system" id="s9e-0q-JLt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vxG-Rw-zyC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3512" y="76"/>
+        </scene>
+        <!--Photos-->
+        <scene sceneID="P8r-ZE-k7D">
+            <objects>
+                <viewController id="ZZo-Fd-xle" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NLr-Q9-ILx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="O3i-ns-9VT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Photos" image="photo" catalog="system" id="YZ9-yd-ypp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wCC-Tr-8MH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2986" y="810"/>
+        </scene>
+        <!--Interests-->
+        <scene sceneID="eGs-ux-zee">
+            <objects>
+                <viewController title="Interests" id="bhM-uc-PhY" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2uj-RA-Asf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="uAu-ep-Z2o"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Hobbies" image="pianokeys" catalog="system" id="dpA-3e-kXV"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rlQ-aU-epj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2828" y="-662"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="dK6-Ay-fCa">
             <objects>
@@ -185,10 +234,14 @@
                     <navigationItem key="navigationItem" id="th6-qP-5bV"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RQw-vW-ytb">
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" systemColor="quaternaryLabelColor"/>
+                        <color key="selectedImageTintColor" systemColor="systemPinkColor"/>
                     </tabBar>
                     <connections>
                         <segue destination="chS-NV-IBy" kind="relationship" relationship="viewControllers" id="ys5-YU-oSv"/>
+                        <segue destination="bhM-uc-PhY" kind="relationship" relationship="viewControllers" id="EPf-0a-ENX"/>
+                        <segue destination="M2c-7f-cmd" kind="relationship" relationship="viewControllers" id="rgL-we-kHe"/>
+                        <segue destination="ZZo-Fd-xle" kind="relationship" relationship="viewControllers" id="l3g-kB-vwT"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f1G-Qh-xgW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -198,8 +251,18 @@
     </scenes>
     <resources>
         <image name="Image" width="512" height="512"/>
+        <image name="location" catalog="system" width="128" height="121"/>
+        <image name="phone" catalog="system" width="128" height="115"/>
+        <image name="photo" catalog="system" width="128" height="93"/>
+        <image name="pianokeys" catalog="system" width="128" height="93"/>
+        <systemColor name="quaternaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.17999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
